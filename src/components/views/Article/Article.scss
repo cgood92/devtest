@@ -1,0 +1,42 @@
+main.articlePage {
+    width: 75%;
+    margin: 0 auto;
+
+    & .figcaption {
+
+        &__title {
+            font-weight: bold;
+        }
+        
+        &__subtitle {
+            color: $dark-grey;
+        }
+    }
+
+    & article {
+
+        & section {
+            margin-top: 3.6rem;
+        }
+
+        & h2 {
+            margin: 2.4rem 0;
+            font-size: $sub-heading-font-size;
+        }
+
+        & p {
+            margin-bottom: $base-font-size*1.8;
+            width: 75%;
+        }
+
+        & aside {
+            float: right;
+            margin-left: 2.4rem;
+            margin-bottom: 2.4rem;
+            border-bottom: 2px solid $light-grey;
+            padding-bottom: .4rem;
+            max-width: 500px;
+        }
+    }
+}
+

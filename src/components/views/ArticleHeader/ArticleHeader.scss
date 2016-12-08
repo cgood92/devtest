@@ -1,0 +1,11 @@
+.article__header {
+    width: 95%;
+
+    & h1 {
+        font-size: $heading-font-size;
+    }
+
+    & h2 {
+        font-size: $sub-heading-font-size;
+    }
+}

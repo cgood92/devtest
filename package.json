@@ -1,0 +1,53 @@
+{
+  "name": "clint-teammofed-demo",
+  "version": "1.0.0",
+  "description": "A code challenge from ICS, for a front-end position.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production gulp build",
+    "start": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgood92/devtest.git"
+  },
+  "author": "Clint Goodman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgood92/devtest/issues"
+  },
+  "homepage": "https://github.com/cgood92/devtest#readme",
+  "dependencies": {
+    "babel": "^5.8.3",
+    "babel-plugin-react-require": "^2.1.0",
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.16.0",
+    "browserify": "^13.1.0",
+    "event-stream": "^3.3.4",
+    "firebase": "^3.4.0",
+    "glob": "^7.0.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-filter": "^4.0.0",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "jquery": "^3.1.0",
+    "materialize-css": "^0.97.7",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.8.1",
+    "redux": "^3.6.0",
+    "reset-css": "^2.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

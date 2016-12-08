@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:light,bold);
+@import '../node_modules/reset-css/_reset.scss';
+
+/* Global stuff */
+$open-sans: 'Open Sans', Arial, Helvetica, sans-serif;
+
+$red: rgb(223, 70, 97);
+$blue: rgb(0, 95, 131);
+$green: rgb(107, 165, 57);
+$dark-grey: rgb(51, 51, 51);
+$light-grey: rgb(208, 211, 212);
+
+$heading-font-size: 4.3rem;
+$sub-heading-font-size: 3.2rem;
+$tile-heading-font-size: 2.5rem;
+$base-font-size: 1.8rem;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $open-sans;
+    font-size: $base-font-size;
+    line-height: 1.5;
+    color: $dark-grey;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Imports */
+@import 'components/views/Home/Home.scss';
+@import 'components/views/Article/Article.scss';
+@import 'components/views/ArticleHeader/ArticleHeader.scss';
+@import 'components/views/VideoAside/VideoAside.scss';
+@import 'components/views/Hero/Hero.scss';
+@import 'components/views/TilePage/TilePage.scss';
+@import 'components/views/Nav/Nav.scss';
+@import 'components/views/TilesPage/TilesPage.scss';

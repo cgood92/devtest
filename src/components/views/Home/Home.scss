@@ -1,0 +1,33 @@
+main.homePage {
+	margin-top: 200px;
+
+	& a {
+		display: inline-block;
+		width: calc(33% - 6rem);
+		height: 350px;
+		overflow: hidden;
+		background-color: $light-grey;
+		border: 2px solid $dark-grey;
+		margin: 0 3rem;
+		text-decoration: none;
+		color: $dark-grey;
+
+		&:hover {
+			border-color: $blue;
+			background-color: $dark-grey;
+			color: white;
+		}
+
+		& img  {
+			height: inherit;
+		}
+
+		& figure {
+			text-align: center;
+
+			& figcaption {
+				padding: 1rem 0;
+			}
+		}
+	}
+}

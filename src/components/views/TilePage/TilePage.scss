@@ -1,0 +1,43 @@
+main.tilePage {
+    width: 75%;
+    margin: 0 auto;
+
+    & .tile {
+        $aside-width: 500px;
+        
+        /* For this demo only, wouldn't be used on normal page */
+        margin-top: 6rem;
+
+        &__body {
+            vertical-align: top;
+            width: calc(100% - (#{$aside-width} + 30px));
+            display: inline-block;
+            padding-left: 10px;
+            
+            &.active {
+                width: 100%;
+            }
+        }
+
+        &__tag {
+            color: $blue;
+        }
+
+        &__title {
+            font-size: $sub-heading-font-size;
+            margin-bottom: 1rem;
+        }
+
+        & aside {
+            display: inline-block;
+            width: $aside-width;
+            margin-right: 20px;
+            transition: width .5s;
+            
+            &.active {
+                width: 100%;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+}

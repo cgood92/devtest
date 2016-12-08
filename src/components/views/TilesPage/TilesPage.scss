@@ -1,0 +1,60 @@
+main.tilesPage {
+	width: 95%;
+	margin: 0 auto;
+
+	& section {
+		$cols: 3;
+		$padding: 4rem;
+		margin-bottom: $padding*3;
+
+		& header {
+			margin: 4rem 0;
+
+			& h2 {
+				padding-bottom: 1rem;
+
+				&.redBorder {
+					border-bottom: 4px solid $red;
+				}
+
+				&.blueBorder {
+					border-bottom: 4px solid $blue;
+				}
+
+				&.greenBorder {
+					border-bottom: 4px solid $green;
+				}
+			}
+		}
+
+		& .sectionTitle {
+			font-size: $tile-heading-font-size;
+			font-weight: bold;
+		}
+
+		& .tile {
+			/* Math is a little tricky here.  The base width is the 100%/cols, which makes sense.  But, then we have to take into account the padding on the right.  There will be padding on the right of every col except for the last, which is the $cols-1.  Find out the padding for that row, and then divide it by the cols. */
+			width: calc(#{100/$cols}% - #{(($cols - 1)*$padding)/$cols});
+			display: inline-block;
+			vertical-align: top;
+			padding-right: $padding;
+
+			&:nth-of-type(#{$cols}) {
+				padding-right: 0;
+			}
+
+			&__title {
+				font-size: $tile-heading-font-size;
+				font-weight: bold;
+			}
+
+			&__description {
+			}
+
+			&__tag {
+				margin-top: $base-font-size;
+				font-weight: bold;
+			}
+		}
+	}
+}

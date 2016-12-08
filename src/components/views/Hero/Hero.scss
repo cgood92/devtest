@@ -1,0 +1,36 @@
+.article__header {
+
+    & #mainHero.loading {
+        opacity: 0.5;
+    }
+
+    &__figure {
+        max-width: 1600px;
+    }
+
+    &__figure img {
+        margin: .4rem 0;
+        max-width: 100%;
+    }
+
+    &__thumbnailContainer {
+        text-align: right;
+
+        & figure {
+            display: inline-block;
+            margin-left: .4rem;
+
+            & img {
+                width: 75px;
+                height: 50px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    & figcaption, &__thumbnailContainer {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+    }
+}
